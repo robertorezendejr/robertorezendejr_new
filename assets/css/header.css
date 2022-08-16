@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.center {
+    max-width:1120px;
+    padding: 0 2%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header {
+    background-color: #5E3EA1;
+    padding: 10px 0;
+    
+}
+
+.logo{
+    width: 50%;
+    color: white;
+}
+
+.menu-desktop {
+    width: 50%;
+    text-align: right;
+}
+
+.menu-desktop ul li {
+    display: inline-block;
+    margin: 8px 10px;
+    
+}
+
+.menu-desktop ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+.menu-mobile {
+    display: none;
+    text-align: right;
+    width: 50%;
+}
+
+/* SVG pro menu pegando pelo i não funcionou */
+.menu-mobile svg {
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+}
+
+.menu-mobile ul {
+    
+    opacity: 0;
+    transition: .3s;
+    background-color: white;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 60px;
+    text-align: center;
+}
+
+.show-menu {
+    opacity: 1 !important;
+}
+
+.menu-mobile ul li a {
+    color: #5E3EA1;
+    text-decoration: none;
+    padding: 8px 0;
+    display: block;
+}
+
+/* CONFIGURANDO A RESPONSAVIDADE DO MENU */
+@media screen and (max-width: 768px) {
+    .menu-mobile {
+        display: block;
+    }
+    /* .menu-mobile ul {
+        display: none;
+    } */
+    .menu-desktop {
+        display: none;
+    }
+}
+
+/* .container {
+    max-width: 1120px;
+} */

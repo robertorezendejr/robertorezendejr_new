@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="/assets/css/header.css">
+    
+    <title>standard</title>
+   
+
+
+</head>
+<body>
+
+    <header>
+       
+        <div class="center">
+            <div class="logo"><!-- LOGO -->
+                <h2>standard</h2>
+            </div>
+
+            <div class="menu-desktop"> <!-- visão DESKTOP -->
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+
+            <div class="menu-mobile"> <!-- visão MOBILE -->
+                <a class="icon-menu"><i class="fas fa-bars"></i></a>
+                
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+
+        
+
+    </header>
+
+
+    <!-- Font awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" integrity="sha512-RXf+QSDCUQs5uwRKaDoXt55jygZZm2V++WUZduaU/Ui/9EGp3f/2KZVahFZBKGH0s774sd3HmrhUy+SgOFQLVQ==" crossorigin="anonymous"></script>
+
+
+    <!-- Configuração do menu-mobile = abrir e fechar -->
+    <script src="/assets/javascript/menu-mobile.js">
+        
+    </script>
+</body>
+</html>
+
+
+<!-- <script>
+    var menuBar = document.querySelector('.icon-menu');
+
+    menuBar.addEventListener('click',(e) => {
+        e.preventDefault();            
+        let menuMobile = document.querySelector('.menu-mobile ul');
+        if(menuMobile.classList.contains('show-menu')){
+            menuMobile.classList.remove('show-menu');
+        }else{
+        menuMobile.classList.add('show-menu');
+        }
+    });
+</script> -->
