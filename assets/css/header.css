@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 .center {
@@ -14,14 +15,26 @@
 }
 
 header {
-    background-color: #5E3EA1;
     padding: 10px 0;
-    
+
+    font-size: 16px;
+    line-height: 24px;
+
+    font-family: 'Roboto', sans-serif;
 }
 
-.logo{
-    width: 50%;
-    color: white;
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #07182A;
+
+}
+
+.center nav {
+    width: 1120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
 .menu-desktop {
@@ -36,8 +49,15 @@ header {
 }
 
 .menu-desktop ul li a {
-    color: white;
     text-decoration: none;
+    color:whitesmoke;
+    transition-duration: 0.5s;
+    margin:0px 15px;
+    letter-spacing: 0.5px;
+}
+
+.menu-desktop ul li a:hover {
+    color:#00FA9A;
 }
 
 
@@ -78,6 +98,43 @@ header {
     display: block;
 }
 
+
+/* Redes sociais na lateral do site */
+.icons {
+    list-style-type: none;
+    position: fixed;
+    z-index: 100;
+    bottom:26%;
+}
+
+.icons li {
+    margin-bottom:20px;
+}
+
+.icons .fab {
+    color:lightgray;
+    font-size:20px;
+    transition-duration: 0.5s;
+}
+
+.icons .fab:hover {
+    color:white;
+}
+/* Fim das redes sociais na lateral */
+
+/* Iniciando responsividade das redes sociais na barra lateral */
+@media(max-width:750px) 
+{
+    #contact-right{
+        display:none;
+    }
+    #icon {
+        display:none;
+    }
+}
+/* Fim */
+
+
 /* CONFIGURANDO A RESPONSAVIDADE DO MENU */
 @media screen and (max-width: 768px) {
     .menu-mobile {
@@ -91,6 +148,96 @@ header {
     }
 }
 
+/* Responsividade para tirar */
+
 /* .container {
     max-width: 1120px;
 } */
+
+.description {
+    margin-bottom: 60px;
+}
+
+
+main .description p {
+    color:lightgray;
+    margin : 20px 0px;
+}
+
+main .description .companyName a {
+    color:#00fa9a;
+    font-weight:bold;
+    
+}
+
+main .description .companyName a:hover {
+    text-decoration: none;
+}
+
+main .moreAbout button a {
+    color:white;
+    transition-duration: 0.5s;
+}
+
+main .moreAbout button a:hover {
+    color:#00fa9a;
+    text-decoration: none;
+}
+main .moreAbout button {
+    background-color:transparent;
+    color:whitesmoke;
+    border:1px solid #00fa9a;
+    padding:10px 20px;
+    cursor:pointer;
+    transition-duration: 0.5s;
+    margin-top:40px;
+    margin-bottom:70px;
+}
+
+main .moreAbout button:hover {
+    border:1px solid whitesmoke;
+    color:#00fa9a;
+}
+
+hr {
+    border:0.5px solid #00fa9a;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+article p {
+    width: 640px;
+    margin-bottom: 20px;
+}
+
+.about-me {
+    color:lightgray;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-me .qualities {
+    color:#00fa9a;
+    font-weight:bold;
+}
+
+.about-me .my-image img {
+    width: 220px;
+    height: 220px;
+    border-radius:50%;
+    margin-top:-20%;
+    /* filter:grayscale(100%); */
+    transform: scale(1,1) translateX(0px);
+    transition-duration: 1s;
+    object-fit: cover;
+}
+
+.about-me .my-image img:hover {
+    transform:scale(1.1,1.1) translateX(-10px);
+    filter:none;
+}
