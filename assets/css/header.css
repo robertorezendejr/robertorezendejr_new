@@ -334,6 +334,9 @@ article p {
 
 #projectss {
     margin-top :100px;
+
+    /* Antes do hr verde deixei um respiro*/
+    margin-bottom: 80px;
 }
 
 #projectss hr {
@@ -429,4 +432,64 @@ article p {
     overflow: auto;
 } */
 
+
+/* depois dos projetos ja feitos *** antes do Footer */
+.getIn {
+    color:whitesmoke;
+    text-align: center;
+    padding-top: 60px;
+}
+
+
+.getIn button {
+    background-color:transparent;
+    border:1px solid #00fa9a;
+    transition-duration: 0.5s;
+    margin-bottom: 60px;
+}
+
+.getIn button:hover {
+    border:1px solid white;
+}
+
+.getIn button a {
+    color:white;
+    display: inline-block;
+    padding:10px 20px;
+    transition-duration: .5s;
+}
+
+.getIn button a:hover {
+    color:#00fa9a;
+    text-decoration: none;
+}
+
+.get-in-touch h3 {
+    color:white;
+    font-weight:bold;
+    font-size:30px;
+    margin:20px 0px;
+}
+
+.message p{
+    font-size:20px;
+    margin:50px 0px;
+}
+
+.message p {
+    color:lightgray;
+}
+
+.msg {
+    color:#00fa9a;
+    font-weight: bold;
+}
+
+/* Imagem cartão de crédito */
+#pagamentos img{
+    width: 340px;
+}
+
+
+/* Footer */
 
