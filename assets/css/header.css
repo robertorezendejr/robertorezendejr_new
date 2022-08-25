@@ -50,7 +50,7 @@ body {
 
 .menu-desktop ul li a {
     text-decoration: none;
-    color:whitesmoke;
+    color:#FFEBCD;
     transition-duration: 0.5s;
     margin:0px 15px;
     letter-spacing: 0.5px;
@@ -199,7 +199,7 @@ main .moreAbout button a:hover {
 }
 main .moreAbout button {
     background-color:transparent;
-    color:whitesmoke;
+    color:#FFEBCD;
     border:1px solid #00fa9a;
     padding:10px 20px;
     cursor:pointer;
@@ -209,7 +209,7 @@ main .moreAbout button {
 }
 
 main .moreAbout button:hover {
-    border:1px solid whitesmoke;
+    border:1px solid #FFEBCD;
     color:#00fa9a;
 }
 
@@ -308,7 +308,7 @@ article p {
 }
 
 .topic h3 {
-    color:whitesmoke;
+    color:#FFEBCD;
     letter-spacing: 2px;
     margin-bottom:30px;
     font-size:35px;
@@ -347,7 +347,7 @@ article p {
 
 
 #projectss h3 {
-    color:whitesmoke;
+    color:#FFEBCD;
     letter-spacing: 2px;
     margin-bottom:30px;
     font-size:35px;
@@ -435,7 +435,7 @@ article p {
 
 /* depois dos projetos ja feitos *** antes do Footer */
 .getIn {
-    color:whitesmoke;
+    color:#FFEBCD;
     text-align: center;
     padding-top: 60px;
 }
@@ -477,7 +477,7 @@ article p {
 }
 
 .message p {
-    color:lightgray;
+    color: #FFEBCD;
 }
 
 .msg {
@@ -491,5 +491,70 @@ article p {
 }
 
 
-/* Footer */
 
+
+
+
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    
+    margin: 100px auto 40px auto;
+    justify-content: space-between;
+   
+    color: #FFEBCD;
+
+    
+}
+
+footer section{
+    display: flex;
+    flex-wrap: wrap;
+
+    
+}
+
+.footer-box {
+    
+    padding: 20px;
+    width: 330px;
+
+    line-height: 24px;
+    
+
+
+}
+
+.footer-box img {
+    width: 120px;
+    margin-bottom: 20px;
+}
+
+.footer-box .form-control {
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+    margin-top: 25px;
+    max-width: 250px;
+}
+
+.footer-box .btn-primary {
+    box-shadow: none;
+    border-radius: 25px;
+    margin-top: 30px;
+    background-image: linear-gradient(to right, #ba1771, #7a124b,#5f1782);
+}
+
+.copyright {
+  margin-bottom: 0;
+  padding-bottom: 25px;
+}
+
+.redirecionamento {
+  font-size: 22px;
+}
+
+    
