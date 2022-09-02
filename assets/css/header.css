@@ -513,8 +513,32 @@ footer section{
     display: flex;
     flex-wrap: wrap;
 
+    align-items: center;
+
     
 }
+
+@media (max-width: 1042px) {
+    footer #footer {
+        margin-left: 15%;
+        display: flex;
+        flex-direction: wrap;
+        align-items: center;
+        
+    }
+    
+}
+
+@media (max-width: 818px) {
+    footer #footer {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        
+    }
+    
+}
+
 
 .footer-box {
     
