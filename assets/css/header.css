@@ -187,15 +187,16 @@ main .description p {
 
 
 /* responsividade */
-/* @media(max-width:374px) 
+@media(max-width:480px) 
 {
     .description p {
-        width: 360px;
+        width: 410px;
 
-        margin: 20px 20px 20px 20px ;
+        align-items: center;
+
     }
 
-} */
+}
 
 
 
@@ -212,6 +213,8 @@ main .description .companyName a:hover {
 
 /* responsividade */
 @media(max-width:522px) 
+
+
 {
     .description {
         width: 360px;
@@ -220,6 +223,9 @@ main .description .companyName a:hover {
     }
 
 }
+
+
+
 
 
 
@@ -248,6 +254,17 @@ main .moreAbout button:hover {
     color:#00fa9a;
 }
 
+ /* responsividade */
+ @media(max-width:480px) 
+
+ {
+     #about1 {
+         width: 410px;
+         
+     }
+ }
+
+
 hr {
     border:0.5px solid #00fa9a;
 }
@@ -265,12 +282,6 @@ article {
 article p {
     width: 640px;
     margin-bottom: 20px;
-
-
-
-
-
-
 
     background-color: #5E3EA1;
 
@@ -323,9 +334,6 @@ article p {
     .about-me  .my-image{
         margin-top: 180px;
         
-
-        
-        
     }
     
 }
@@ -336,6 +344,22 @@ article p {
         width: 360px;
 
         /* margin: 0 10px 0 10px; */
+    }
+
+}
+
+/* responsividade */
+@media(max-width:480px) 
+
+
+{
+    .about-me  {
+        width: 360px;
+        margin: 0;
+    
+    }
+    .about-me p {
+        width: 360px;
     }
 
 }
@@ -352,6 +376,19 @@ article p {
 
     margin-right: 100%;
    
+}
+
+/* responsividade */
+@media(max-width:480px) 
+
+
+{
+    .topic  {
+        width: 360px;
+        margin: 0;
+        align-items: center;
+    }
+
 }
 
 
@@ -391,7 +428,21 @@ article p {
 
     .technical-skills h3 {        
         line-height: 1.5;
+    }
 
+}
+
+/* responsividade */
+@media(max-width:480px) 
+
+{
+    .technical-skills  {
+        width: 360px;
+        margin: auto;
+        
+    }
+    .technical-skills  h3{
+        text-align: center;
     }
 
 }
@@ -773,3 +824,15 @@ footer section{
    }
  }
  
+ /* responsividade */
+@media(max-width:480px) 
+
+{
+    .center #footer {
+        width: 410px;
+        margin:auto;
+        
+    }
+    
+
+}
