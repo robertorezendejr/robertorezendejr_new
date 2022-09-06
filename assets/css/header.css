@@ -29,6 +29,9 @@ body {
 
 }
 
+
+
+
 .center nav {
     width: 1120px;
     display: flex;
@@ -158,10 +161,18 @@ body {
     max-width: 920px;
 
 
-
-
-
     background-color: #5E3EA1;
+}
+
+/* responsividade */
+@media(max-width:522px) 
+{
+    .description  {
+        width: 422px;
+
+        margin: 0 10px 0 10px;
+    }
+
 }
 
 
@@ -170,13 +181,23 @@ main .description p {
     margin : 20px 0px;
 
 
-
-
-
-
     background-color: #5E3EA1;
-
 }
+
+
+
+/* responsividade */
+/* @media(max-width:374px) 
+{
+    .description p {
+        width: 360px;
+
+        margin: 20px 20px 20px 20px ;
+    }
+
+} */
+
+
 
 main .description .companyName a {
     color:#00fa9a;
@@ -187,6 +208,20 @@ main .description .companyName a {
 main .description .companyName a:hover {
     text-decoration: none;
 }
+
+
+/* responsividade */
+@media(max-width:522px) 
+{
+    .description {
+        width: 360px;
+
+        margin: 10px 0;
+    }
+
+}
+
+
 
 main .moreAbout button a {
     color:white;
@@ -294,6 +329,17 @@ article p {
     }
     
 }
+
+@media(max-width:522px) 
+{
+    .about-me  {
+        width: 360px;
+
+        /* margin: 0 10px 0 10px; */
+    }
+
+}
+
 
 
 
