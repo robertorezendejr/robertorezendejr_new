@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    
+    
+
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -43,15 +49,19 @@
     <!-- Fonte -->
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet"> 
 
     <!-- FavIcon -->
     <link rel="icon" href="assets/img/coder-head.png">
     
     <!-- Font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
-
-    <link rel="stylesheet" href="/assets/css/header.css">
+    
+    <!-- voltar aqui -->
+    <!-- <link rel="stylesheet" href="assets/css/aos.css"> -->
+    <link rel="stylesheet" href="assets/css/header.css">
     
     <!-- typed.JS é para instalar o efeito máquina de esqcrever -->
     <script src="assets/javascript/typed.js"></script>
@@ -59,11 +69,20 @@
     <!-- chave do google -->
     <meta name="google-site-verification" content="xnuKliFST6N735Odl7JZtpxIwUrV_gwLF8ZP67IShMk" />
 
-    <title>standard</title>
+    <title>Roberto Rezende Jr</title>
 
 
 </head>
 <body>
+    <!-- preload   voltar aqui-->
+    
+    
+
+    <!-- Up Arrow To Top Starts -->
+
+    <div id="up-arrow">
+        <button><i class="fas fa-arrow-circle-up" style="color: #00fa9a; font-size: 25px;"></i></button>
+    </div>
     
     
     <header>
@@ -72,10 +91,10 @@
         <div id="icon" data-aos="fade-in-left" data-aos-delay="500">
             <ul class="icons">
                 <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100013738596789"><i class="fab fa-facebook-f"></i></a></li>
-                <!-- <li><a target="_blank" href="https://github.com/robertorezendejr/"><i class="fab fa-github"></i></a></li> -->
+                <li><a target="_blank" href="https://github.com/robertorezendejr/"><i class="fab fa-github"></i></a></li>
                 <li><a target="_blank" href="https://www.instagram.com/robertorezendejrr/"><i class="fab fa-instagram"></i></a></li>
                 <li><a target="_blank" href="https://www.linkedin.com/in/robertorezendedossantosjunior/"><i class="fab fa-linkedin-in"></i></a></li>
-                <li><a target="_blank" href="https://api.whatsapp.com/send?l=pt&phone=5522992721235"><i class="fab fa-whatsapp"></i></a></li>
+                <li><a target="_blank" href="https://api.whatsapp.com/send?l=pt&phone=5522992718711"><i class="fab fa-whatsapp"></i></a></li>
             </ul>
         </div>
 
@@ -93,9 +112,12 @@
                 <div class="menu-desktop"> <!-- visão DESKTOP -->
                     <ul>
                         <li><a href="#">Início</a></li>
-                        <li><a href="#">Sobre</a></li>
-                        <li><a href="#">Projetos</a></li>
-                        <li><a href="#">Blog</a></li>
+                        <li><a href="#about1">Sobre</a></li>
+                        <li><a href="#projectss">Projetos</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li class="nav-item">
+                            <button><a href="partilhar.html">Partilhar</a></button>
+                        </li>
                     </ul>
                 </div>
 
@@ -107,14 +129,35 @@
                         <li><a href="#">Sobre</a></li>
                         <li><a href="#">Projetos</a></li>
                         <li><a href="#">Blog</a></li>
+                        <li class="nav-item">
+                            <button><a href="partilhar.html">Partilhar</a></button>
+                        </li>
                     </ul>
                 </div>
 
             </nav>
 
             <main>
+
+                <div class="center">
+                    <div data-aos="fade-right" data-aos-delay="200">
+                        <!-- <p><span>Olá&nbsp;!</span>&nbsp; Meu nome é</p> -->
+                        <!-- <h2 class="hello">Roberto Rezende Jr.</h2> -->
+                        <!-- <h5 class="desenvolvedor-frontend" >( Desenvolvedor Frontend )</h5> -->
+
+
+                        <div id="bg">
+                        <div id="title_card" class="card">
+                            
+                            <span id="description"></span>
+                        </div>
+                        </div>
+                        
+                    </div>
+
+                </div>
+
                 <div class="description">
-                    
                         <p>
                             UX Design & Desenvolvedor Frontend. Faço projetos exclusivos visando a experiência do usuário.
                             Interfaces amigáveis para Desktop e Mobile, com uso das tecnologias mais usadas do mercado. 
@@ -122,7 +165,6 @@
                             Quer saber um pouco mais da vida de um desenvolvedor? <span class="companyName"><a
                             href="#about1">Veja o meu blog.</a></span>
                         </p>
-                    
                 </div>
 
                 <hr>
@@ -150,7 +192,7 @@
                             Totalmente Personalizados e Exclusivos.</span>
                         <br>
                             
-                            <h3 class="description" >Vamos tomar um café? <a href="https://api.whatsapp.com/send?l=pt&phone=5522992721235" target="_blank"><i class=" fab fa-whatsapp fa-xs" style="color: #34af23;"></i></a> </h3>
+                            <h3 class="description" >Vamos tomar um café? <a href="https://api.whatsapp.com/send?l=pt&phone=5522992718711" target="_blank"><i class=" fab fa-whatsapp fa-xs" style="color: #34af23;"></i></a> </h3>
                         </p>
                     
                         
@@ -403,10 +445,10 @@
             <div class="getIn" id="getTouch">
                 
                 
-                <div class=" get-in-touch" data-aos="fade-out" data-aos-delay="250">
+                <div class="get-in-touch" data-aos="fade-out" data-aos-delay="250">
                     <h3>Marque a primeira consultoria grátis</h3>
                 </div>
-                <div class=" message" data-aos="zoom-in" data-aos-delay="300">
+                <div class="message" data-aos="zoom-in" data-aos-delay="300">
                     <p>Gostou do que viu? Considere entrar em contato hoje mesmo. 
                     <span class="msg">Faço a primeira consultoria grátis e te ajudo a criar seu projeto. </span>
                     Você fechando comigo ou não vou te ajudar a tirar essa ideia do papel ou levar o seu projeto já existente para um outro nível.
@@ -446,7 +488,7 @@
                     <p><b>Trabalho em Coworking<br>Faço Atendimento na sua Empresa.</b></p>
                     <P><i class="fa fa-map-marker"></i> Atendimento pessoal em toda região dos Lagos e RJ</P>
                     <P><i class="fa fa-building"></i> <a href="https://goo.gl/maps/fK37Z7hsCmtRFTGq5" target="_blank"  style="color:#D5D5D5;" > Rua Faisao Nº 119 Bairro Aquarius Cabo Frio-RJ</P></a>
-                    <P><i class="fa fa-phone"></i> <a href="https://api.whatsapp.com/send?l=pt&phone=5522992721235" target="_blank"  style="color:#D5D5D5;" > +55 22 9 92721235</P></a>
+                    <P><i class="fa fa-phone"></i> <a href="https://api.whatsapp.com/send?l=pt&phone=5522992718711" target="_blank"  style="color:#D5D5D5;" > +55 22 9 92718711</P></a>
                     <P><i class="fa fa-envelope"></i> <a href="mailto:contato@robertorezendejr.com.br" style="color:#D5D5D5;">contato@robertorezendejr.com.br</P></a> 
                 </div>
 
@@ -473,10 +515,6 @@
     <hr>
     <p class="copyright">Copyright &copy; Roberto Rezende Jr 16/06/2020</p>
     
-       
-
-    
-
 
     <!-- daqui para baixo é o lazyload (para carregar a imagens conforme eu for scrolando o site.) -->
     <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@16.1.0/dist/lazyload.min.js"></script>
@@ -491,9 +529,10 @@
 
 
     <!-- Configuração do menu-mobile = abrir e fechar -->
-    <script src="/assets/javascript/menu-mobile.js">
-        
-    </script>
+    <script src="assets/javascript/menu-mobile.js"></script>
+    <script src="assets/javascript/script.js"></script>
+    <script src="assets/javascript/typed.js"></script>
+    <script src="assets/javascript/aos.js"></script>
 </body>
 </html>
 

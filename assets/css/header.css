@@ -14,21 +14,86 @@
     flex-wrap: wrap;
 }
 
+@media (max-width: 480px) {
+    .center {
+        width: 370px;  
+    } 
+}
+
+
+
+
 header {
     padding: 10px 0;
 
     font-size: 16px;
     line-height: 24px;
 
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     background-color: #07182A;
 
 }
 
+
+/* seta para voltar ao topo do site */
+#up-arrow button {
+    background-color:transparent;
+    border:none;
+    position: fixed;
+    z-index: 1;
+    right:30px;
+    bottom:30px;
+}
+
+
+/* redes sociais na lateral */
+.icons {
+    list-style-type: none;
+    position: fixed;
+    z-index: 3;
+    bottom:26%;
+
+}
+
+.icons li {
+    margin-bottom:20px;
+    
+}
+
+.icons li a {
+    margin-bottom:20px;
+    color:lightgray;
+    font-size: 20px;
+    margin-left: 15px;
+}
+
+.icons li a:hover {
+    color: #00fa9A;
+}
+
+/* efeito load | voltar aqui */
+
+
+
+
+.banner p {
+    margin-top :140px;
+}
+.banner h1 {
+    color:white;
+    font-size:50px;
+    font-weight:bold;
+    letter-spacing: 2px;
+}
+.banner h2 {
+    color:lightgray;
+    font-size:30px;
+    letter-spacing: 2px;
+}
 
 
 
@@ -40,16 +105,31 @@ body {
 
 }
 
+
+
 .menu-desktop {
     width: 50%;
     text-align: right;
+
+
 }
 
 .menu-desktop ul li {
     display: inline-block;
-    margin: 8px 10px;
+    margin: 8px 5px;
+}
+
+.center .menu-desktop ul li button {
+    background-color: transparent;
+    line-height: 24px;
+    font-family: 'Ubuntu', sans-serif;
+
+    font-size: 16px;
+
+    padding: 5px;
     
 }
+
 
 .menu-desktop ul li a {
     text-decoration: none;
@@ -57,6 +137,7 @@ body {
     transition-duration: 0.5s;
     margin:0px 15px;
     letter-spacing: 0.5px;
+
 }
 
 .menu-desktop ul li a:hover {
@@ -69,7 +150,10 @@ body {
     display: none;
     text-align: right;
     width: 50%;
+
 }
+
+
 
 /* SVG pro menu pegando pelo i não funcionou */
 .menu-mobile svg {
@@ -88,6 +172,8 @@ body {
     left: 0;
     top: 60px;
     text-align: center;
+
+    background-color: #07182A;
 }
 
 .show-menu {
@@ -99,6 +185,15 @@ body {
     text-decoration: none;
     padding: 8px 0;
     display: block;
+    color: white;
+
+}
+
+.menu-mobile ul li button a {
+    color: #5E3EA1;
+    font:bold;
+    text-decoration: none;
+
 }
 
 
@@ -134,6 +229,7 @@ body {
     #icon {
         display:none;
     }
+    
 }
 /* Fim */
 
@@ -160,8 +256,6 @@ body {
 .description {
     max-width: 920px;
 
-
-    background-color: #5E3EA1;
 }
 
 /* responsividade */
@@ -178,10 +272,8 @@ body {
 
 main .description p {
     color:lightgray;
-    margin : 20px 0px;
+    margin : 30px auto 20px auto;
 
-
-    background-color: #5E3EA1;
 }
 
 
@@ -189,8 +281,13 @@ main .description p {
 /* responsividade */
 @media(max-width:480px) 
 {
+    .description {
+        padding: 15px;
+    }
+
     .description p {
-        width: 410px;
+        width: 360px;
+        margin: auto;
 
         align-items: center;
 
@@ -259,8 +356,21 @@ main .moreAbout button:hover {
 
  {
      #about1 {
-         width: 410px;
+         width:360px;
          
+     }
+
+     #about1 button {
+        font-size: 16px;
+        padding: 20px;
+        align-items: center;
+
+        margin: 15px;
+     }
+
+     #about1 button a {
+       
+        text-decoration: none;
      }
  }
 
@@ -274,7 +384,7 @@ article {
     flex-direction: column;
 
 
-    background-color: #5E3EA1;
+
 
     
 }
@@ -283,7 +393,6 @@ article p {
     width: 640px;
     margin-bottom: 20px;
 
-    background-color: #5E3EA1;
 
 }
 
@@ -355,11 +464,17 @@ article p {
 {
     .about-me  {
         width: 360px;
-        margin: 0;
+        
+    }
+
+    .about-me  h3{
+        padding: 15px;
     
     }
+
     .about-me p {
         width: 360px;
+        padding: 15px;
     }
 
 }
@@ -414,8 +529,10 @@ article p {
 .technical-skills .topic h3 {
     margin-top:100px;
     margin-bottom:60px;
+
+    line-height: 1.1;
     
-   width: 550px;
+    width: 550px;
 }
 
 /* responsividade */
@@ -426,7 +543,7 @@ article p {
         margin: auto;
     }
 
-    .technical-skills h3 {        
+    .technical-skills h3 {
         line-height: 1.5;
     }
 
@@ -438,11 +555,16 @@ article p {
 {
     .technical-skills  {
         width: 360px;
-        margin: auto;
-        
+        margin: auto;    
     }
+
     .technical-skills  h3{
         text-align: center;
+    }
+
+    .technical-skills  img{
+        height: 80px;
+        margin: 18px;
     }
 
 }
@@ -599,6 +721,43 @@ article p {
 }
 
 
+@media (max-width: 480px) {
+    #projectss {
+        width: 360px;
+    }
+
+    #projectss .pro-details {
+        width: 360px;
+    }
+
+    #projectss .pro-details img {
+        width: 350px;
+        margin: auto;
+        /* align-items: center; */
+    }
+
+    .center_texts {
+        width: 360px;
+    }
+
+
+    #projectss .pro-details p {
+        width: 360px;
+        /* padding: 15px; */
+    }
+
+    #projectss .pro-details h2 {
+        line-height: 1.5;
+    }
+
+    .row h3 {
+        width: 340px;
+        
+    }
+
+}
+
+
 .center_texts {
     text-align: center;
 }
@@ -643,7 +802,9 @@ article p {
     color:white;
     display: inline-block;
     padding:10px 20px;
-    transition-duration: .5s;
+    transition-duration: .5s;   
+
+    text-decoration: none;
 }
 
 .getIn button a:hover {
@@ -656,14 +817,16 @@ article p {
     font-weight:bold;
     font-size:30px;
     margin:20px 0px;
+
+    line-height: 1.2;
 }
 
 .message p{
     font-size:20px;
     margin:50px 0px;
-}
+    text-align: justify;
+    padding: 15px;
 
-.message p {
     color: #FFEBCD;
 }
 
@@ -732,7 +895,7 @@ footer section{
 
 .footer-box {
     
-    padding: 20px;
+    padding: 15px;
     width: 330px;
 
     line-height: 24px;
@@ -771,9 +934,10 @@ footer section{
 }
 
 .copyright {
+    margin-top: 22px;
     color: #FFEBCD;
-    margin-bottom: 20px;
-    padding-bottom: 25px;
+    margin-bottom: 25px;
+    /* padding-bottom: 25px; */
 
     text-align: center;
 }
@@ -829,10 +993,16 @@ footer section{
 
 {
     .center #footer {
-        width: 410px;
+        width: 370px;
         margin:auto;
-        
     }
-    
+
+    .footer-box h3 {
+        padding-bottom: 26px;
+    }
+
+    .footer-box p {
+        line-height: 1.5;
+    }
 
 }
