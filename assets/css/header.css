@@ -56,6 +56,7 @@ body {
     position: fixed;
     z-index: 3;
     bottom:26%;
+    margin-left: 20px;
 
 }
 
@@ -262,9 +263,14 @@ body {
 @media(max-width:522px) 
 {
     .description  {
-        width: 422px;
+        width: 355px;
 
         margin: 0 10px 0 10px;
+    }
+
+    .description p {
+        width: 355px;
+
     }
 
 }
@@ -309,14 +315,45 @@ main .description .companyName a:hover {
 
 
 /* responsividade */
-@media(max-width:522px) 
+@media(max-width:560px) 
 
 
 {
     .description {
         width: 360px;
 
+        
+        align-items: center;
+        margin: auto;
+    }
+
+    .description p{
+        width: 360px;
+
         margin: 10px 0;
+        
+    }
+
+    #about1 {
+        width: 360px;
+        margin: auto;
+    }
+
+    .about-me article{
+        width: 360px;
+    }
+
+    .about-me article p{
+        width: 360px;
+        margin: auto;
+    }
+
+    .technical-skills {
+        width: 360px;
+    }
+
+    .technical-skills .topic {
+        width: 360px;
     }
 
 }
@@ -437,7 +474,7 @@ article p {
         
     }
     .about-me  p {
-        width: 500px;
+        width: 460px;
         
     }
     .about-me  .my-image{
